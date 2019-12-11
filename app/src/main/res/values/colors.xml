@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tempTextColor">#8D3E2E</color>
+    <color name="humidityTextColor">#636363</color>
+    <color name="weatherStateColor">#606060</color>
+    <color name="localTextColor">#7B7B7B</color>
+    <color name="customProgressbarColor">#E2DAD6</color>
+</resources>

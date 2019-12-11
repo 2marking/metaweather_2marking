@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IDUS_CodingTest_2marking</string>
+    <string name="errmsg_retrofit_unknown">Unknown Error</string>
+    <string name="errmsg_retrofit_servernetwork">네트워크 연결 Error</string>
+    <string name="errmsg_retrofit_cs_unknown">Unknown Error</string>
+    <string name="METAWEATHER_TARGET_URL">https://www.metaweather.com</string>
+    <string name="SEARCH_LOCAL_WORD">se</string>
+
+</resources>
