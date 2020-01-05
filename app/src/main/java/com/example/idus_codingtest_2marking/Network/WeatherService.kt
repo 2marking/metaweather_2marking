@@ -1,7 +1,7 @@
 package com.example.idus_codingtest_2marking
 
-import com.example.suhey.pbadmin_android.Login.Main.Retrofit.responseLocalData
-import com.example.suhey.pbadmin_android.Login.Main.Retrofit.weatherDataModel
+import com.example.idus_codingtest_2marking.Model.responseLocalData
+import com.example.idus_codingtest_2marking.Model.weatherDataModel
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

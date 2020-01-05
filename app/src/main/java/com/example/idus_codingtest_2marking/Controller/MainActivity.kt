@@ -2,23 +2,20 @@ package com.example.idus_codingtest_2marking.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.idus_codingtest_2marking.Model.responseWeatherData
-import com.example.suhey.pbadmin_android.Login.Main.Retrofit.*
-import com.example.suhey.pbadmin_android.etc.RetrofitTask
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Retrofit
 import java.net.ConnectException
 import java.net.UnknownHostException
 import java.util.*
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.idus_codingtest_2marking.Model.*
 import com.example.idus_codingtest_2marking.R
+import com.example.idus_codingtest_2marking.RetrofitTask
 import com.example.idus_codingtest_2marking.WeatherService
 
 class MainActivity : AppCompatActivity(), RetrofitTask.RetrofitExecutionHandler, SwipeRefreshLayout.OnRefreshListener {
-
     private var RETROFIT_MODE = 0x01
     private var RETROFIT_FIRST_MODE = 0x01
     private var RETROFIT_REFRESH_MODE = 0x02
@@ -159,7 +156,9 @@ class MainActivity : AppCompatActivity(), RetrofitTask.RetrofitExecutionHandler,
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // 최초 통신 시작
         metaWeatherRetrofit()
+        // SwipeLayout 리스너 설정
         layout_swipe.setOnRefreshListener(this)
     }
 }

@@ -1,7 +1,6 @@
-package com.example.suhey.pbadmin_android.etc
+package com.example.idus_codingtest_2marking
 
 import android.os.AsyncTask
-import android.util.Log
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

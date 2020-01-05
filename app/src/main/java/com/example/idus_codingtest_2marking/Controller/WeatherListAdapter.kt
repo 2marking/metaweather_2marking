@@ -1,6 +1,5 @@
 package com.example.idus_codingtest_2marking.Controller
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,7 +16,7 @@ class WeatherListAdapter(weatherList:MutableList<responseWeatherData>) : Recycle
 
     override fun getItemViewType(position: Int): Int {
         return when (position) {
-            0 -> R.layout.item_weather_header
+            TYPE_HEADER -> R.layout.item_weather_header
             else -> R.layout.item_weather
         }
     }
@@ -52,7 +51,7 @@ class WeatherListAdapter(weatherList:MutableList<responseWeatherData>) : Recycle
                     tvTodayTemp.text = item.todayWeatherTheTemp.toString() + "°C"
                     tvTodayHumidity.text = item.todayWeatherHumidity.toString() + "%"
 
-                    Glide.with(holder.itemView.context).load(RETROFIT_METAWEATHER_ICON_URL+item.todayWeatherStatAbbr+".png").into(ivTomorrowStateAbbr)
+                    Glide.with(holder.itemView.context).load(RETROFIT_METAWEATHER_ICON_URL+item.tomorrowWeatherStateAbbr+".png").into(ivTomorrowStateAbbr)
                     tvTomorrowStateName.text = item.tomorrowWeatherStateName
                     tvTomorrowTemp.text = item.tomorrowWeatherTheTemp.toString() + "°C"
                     tvTomorrowHumidity.text = item.tomorrowWeatherHumidity.toString() + "%"
